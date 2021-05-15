@@ -51,7 +51,7 @@ function OrderLocation({onChangeLocation} : Props) {
     console.log(place)
     onChangeLocation({
       latitude: place.position.lat,
-      longitude: place.position.lng,
+      longitude: place.position.lng, 
       address: place.label!
     });
   };

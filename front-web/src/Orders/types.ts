@@ -12,3 +12,11 @@ export type OrderLocationData ={
     latitude: number;
     longitude: number;
 }
+
+type ProducId = {
+    id: number;
+}
+
+export type OrderPayload ={
+    products : ProducId[];
+} & OrderLocationData;
